@@ -22,7 +22,10 @@ namespace prn211
             this.price = price;
             this.expDate = expDate;
         }
+        public override string ToString()
+        {
+            return id + "\t" + name + "\t" + category + "\t" + price + "\t" + expDate.ToString("dd/MM/yyyy");
+        }
     }
-
 
 }
